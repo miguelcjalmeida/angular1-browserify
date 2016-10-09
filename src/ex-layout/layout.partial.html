@@ -1,0 +1,7 @@
+<ul>
+    <li ng-repeat="tab in tabs" ng-click="selectTab(tab)">
+        {{::tab.name}}
+    </li>
+</ul>
+
+<div ui-view></div>

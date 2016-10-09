@@ -1,0 +1,34 @@
+{
+  "name": "angular1-browserify",
+  "version": "1.0.0",
+  "description": "learning browserify with angular 1 project ",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelcjalmeida/angular1-browserify.git"
+  },
+  "keywords": [
+    "angular",
+    "browserify",
+    "gulp"
+  ],
+  "author": "Miguel Almeida <darkmagusbr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miguelcjalmeida/angular1-browserify/issues"
+  },
+  "homepage": "https://github.com/miguelcjalmeida/angular1-browserify#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.30",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1"
+  }
+}
