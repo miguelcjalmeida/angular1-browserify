@@ -1,4 +1,4 @@
 module.exports = {
-    templateUrl: 'ex-button/button.partial.html',
+    template: require('./button.partial.html'),
     controller: require('./button.controller')
 }

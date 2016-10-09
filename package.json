@@ -25,6 +25,7 @@
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-live-server": "0.0.30",
+    "stringify": "^5.1.0",
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {

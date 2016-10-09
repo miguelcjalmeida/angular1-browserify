@@ -1,5 +1,5 @@
 module.exports = {
-    templateUrl: 'ex-layout/layout.partial.html',
+    template: require('./layout.partial.html'),
     controller: require('./layout.controller')
 }
 

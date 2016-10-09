@@ -3,20 +3,23 @@ let gls = require('gulp-live-server')
 let browserify = require('browserify')
 let source = require('vinyl-source-stream')
 let del = require('del')
+let stringify = require('stringify');
 
-gulp.task('clean', [], () => del('./dist/**/*.*'));
+gulp.task('clean', [], () => del('./dist/'));
 
 gulp.task('build', ['clean', 'build-other-files'], () => {
-    let b = browserify();
-
-    return b.add('./src/app.module.js')
+    return browserify()
+        .transform(stringify, {
+            appliesTo: { includeExtensions: ['.html'] }
+        })
+        .add('./src/app.module.js')
         .bundle()
         .pipe(source('bundle.js'))
         .pipe(gulp.dest('./dist'))
 })
 
 gulp.task('build-other-files', ['clean'], () => {
-    return gulp.src('src/**/*.html')
+    return gulp.src('src/index.html')
         .pipe(gulp.dest('./dist'));
 });
 
